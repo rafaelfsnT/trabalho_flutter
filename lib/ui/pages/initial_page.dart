@@ -33,7 +33,7 @@ class _InitialPageState extends State<InitialPage> {
       // Exibe um AlertDialog informando que a altura não está no formato correto
       _showErrorDialog(
         context,
-        'Digite a altura no formato correto (ex: 1.77)',
+        'Digite a altura no formato correto (ex: 1.50)',
       );
       return;
     }
@@ -68,7 +68,7 @@ class _InitialPageState extends State<InitialPage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Align(
-            alignment: Alignment.center, // Centraliza o título
+            alignment: Alignment.center, 
             child: Text(
               'Resultado do IMC',
               style: TextStyle(fontWeight: FontWeight.bold),
@@ -83,8 +83,7 @@ class _InitialPageState extends State<InitialPage> {
               ),
               SizedBox(height: 10),
               Text(
-                imc.toStringAsFixed(2), // Exibe o IMC com 2 casas decimais
-                style: TextStyle(
+                imc.toStringAsFixed(2),                 style: TextStyle(
                   fontSize: 30,
                   color: Colors.deepPurpleAccent,
                   fontWeight: FontWeight.bold,

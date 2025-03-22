@@ -7,7 +7,7 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tela Sobre', style: TextStyle(color: Colors.white)),
+        title: Text('Sobre o App', style: TextStyle(color: Colors.white)),
         centerTitle: true,
         backgroundColor: Colors.deepPurpleAccent,
       ),
@@ -36,11 +36,7 @@ class AboutPage extends StatelessWidget {
             SizedBox(height: 20),
 
             // Versão do app
-            Text(
-              'Versão: 1.0.0',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 20),
+          
 
             // Informações adicionais ou contatos
 
